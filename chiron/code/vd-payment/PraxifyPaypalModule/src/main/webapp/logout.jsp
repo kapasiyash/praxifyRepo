@@ -10,10 +10,10 @@
 
 <%
 
-String host = request.getHeader("Host");
+/* String host = request.getHeader("Host");
 
 session.setAttribute("userBean", null);
-response.sendRedirect("http://"+host+"/PraxifyPaypalModule/");
+response.sendRedirect("http://"+host+"/PraxifyPaypalModule/"); */
 
 %>
 
