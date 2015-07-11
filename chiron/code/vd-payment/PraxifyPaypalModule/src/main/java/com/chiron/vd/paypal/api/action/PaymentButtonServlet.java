@@ -107,7 +107,7 @@ public class PaymentButtonServlet extends HttpServlet {
 		
 		try {
 			
-			String msg = "Gand marava cancel kryu Loda";
+			String msg = "Sorry You have cancelled the payment process";
 			
 			response.sendRedirect("http://"+host+"/PraxifyPaypalModule/chat.jsp?message="+msg);
 			

@@ -23,11 +23,12 @@ public class Demo {
     	List<User> users = session.createQuery("SELECT a FROM User a where a.emailAddress='"+userEntity.getEmailAddress()+"'").list();
     	
     	if(users!=null && !users.isEmpty()) {
-    		//Error
+    		for(User u : users) {
+    			System.out.println(u);
+    		}
     	}
     	
     	
-		session.save(userEntity);
 		
 		System.out.println(userEntity);
 		
