@@ -1,0 +1,346 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.praxify.hackathon</groupId>
+  <artifactId>PraxifyPaypalModule</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Praxify Paypal Module</name>
+  
+  <build>
+<finalName>${artifactId}</finalName>
+
+<plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+        </configuration>
+    </plugin>
+    </plugins>
+</build> 
+  
+  
+  
+ <dependencies>
+
+
+  <dependency>
+	<groupId>com.paypal.sdk</groupId>
+	<artifactId>merchantsdk</artifactId>
+	<version>2.13.117</version>
+</dependency>
+  
+  
+ <dependency>
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-log4j12</artifactId>
+	<version>1.5.6</version>
+</dependency>
+  
+   <dependency>
+  <groupId>com.restfb</groupId>
+  <artifactId>restfb</artifactId>
+  <version>1.6.14</version>
+</dependency>
+<dependency>
+	<groupId>com.paypal.sdk</groupId>
+	<artifactId>paypal-core</artifactId>
+	<version>1.4.3</version>
+</dependency>
+
+  
+ <dependency>
+           <groupId>org.twitter4j</groupId>
+           <artifactId>twitter4j-core</artifactId>
+           <version>[4.0,)</version>
+       </dependency>
+
+  <dependency>
+  <groupId>joda-time</groupId>
+  <artifactId>joda-time</artifactId>
+  <version>2.6</version>
+</dependency>
+
+<dependency>
+	<groupId>jaxen</groupId>
+	<artifactId>jaxen</artifactId>
+	<version>1.1.6</version>
+</dependency>
+
+  <dependency>
+	<groupId>org.apache.struts</groupId>
+	<artifactId>struts2-core</artifactId>
+	<version>2.3.1.2</version>
+</dependency>
+  
+  <dependency>
+	<groupId>jfree</groupId>
+	<artifactId>jfreechart</artifactId>
+	<version>1.0.13</version>
+</dependency>
+  
+  
+   <dependency>
+          <groupId>org.apache.struts</groupId>
+	  <artifactId>struts2-dojo-plugin</artifactId>
+	  <version>2.1.8</version>
+    </dependency>
+ 
+    <!-- Struts 2 JSON Plugins -->
+    <dependency>
+          <groupId>org.apache.struts</groupId>
+	  <artifactId>struts2-json-plugin</artifactId>
+	  <version>2.1.8</version>
+    </dependency>
+  
+  <dependency>
+	<groupId>javax.mail</groupId>
+	<artifactId>mail</artifactId>
+	<version>1.4</version>
+</dependency>
+  
+  
+  <dependency>
+	<groupId>log4j</groupId>
+	<artifactId>log4j</artifactId>
+	<version>1.2.17</version>
+</dependency>
+  
+  <dependency>
+	<groupId>javax.persistence</groupId>
+	<artifactId>persistence-api</artifactId>
+	<version>1.0</version>
+</dependency>
+
+<dependency>
+	<groupId>jfree</groupId>
+	<artifactId>jfreechart</artifactId>
+	<version>1.0.13</version>
+</dependency>
+
+
+<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>ejb3-persistence</artifactId>
+	<version>1.0.1.GA</version>
+</dependency>
+
+<dependency>
+	<groupId>javax.annotation</groupId>
+	<artifactId>javax.annotation-api</artifactId>
+	<version>1.2</version>
+</dependency>
+
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.2.5</version>
+</dependency>
+  
+  <dependency>
+	<groupId>displaytag</groupId>
+	<artifactId>displaytag</artifactId>
+	<version>1.2</version>
+</dependency>
+
+<dependency>
+	<groupId>dom4j</groupId>
+	<artifactId>dom4j</artifactId>
+	<version>1.6.1</version>
+</dependency>
+
+<dependency>
+		<groupId>com.sun.jersey</groupId>
+		<artifactId>jersey-client</artifactId>
+		<version>1.8</version>
+	</dependency>
+
+
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-core</artifactId>
+	<version>2.4.0</version>
+</dependency>
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-annotations</artifactId>
+	<version>2.4.0</version>
+</dependency>
+<dependency>
+	<groupId>com.fasterxml.jackson.core</groupId>
+	<artifactId>jackson-databind</artifactId>
+	<version>2.4.1</version>
+</dependency>
+<dependency>
+	<groupId>postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+	<version>9.1-901-1.jdbc4</version>
+</dependency>
+<dependency>
+	<groupId>commons-httpclient</groupId>
+	<artifactId>commons-httpclient</artifactId>
+	<version>3.1</version>
+</dependency>
+
+
+
+  <dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpmime</artifactId>
+	<version>4.3.4</version>
+</dependency>
+  
+  
+    <dependency>
+	<groupId>org.json</groupId>
+	<artifactId>json</artifactId>
+	<version>20141113</version>
+</dependency>
+    
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-webmvc</artifactId>
+	<version>4.0.0.RELEASE</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.3.4</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.axis</groupId>
+	<artifactId>axis</artifactId>
+	<version>1.4</version>
+</dependency>
+  
+
+<dependency>
+	<groupId>javax.servlet</groupId>
+	<artifactId>javax.servlet-api</artifactId>
+	<version>3.1.0</version>
+	<scope>system</scope>
+<systemPath>${project.basedir}/lib/servlet-api-3.0.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>jaxrpc</groupId>
+<artifactId>jaxrpc</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/jaxrpc.jar</systemPath>
+</dependency>
+
+<!-- <dependency>
+<groupId>paypal_stubs</groupId>
+<artifactId>paypal_stubs</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/paypal_stubs.jar</systemPath>
+</dependency> -->
+
+<dependency>
+<groupId>dom4j</groupId>
+<artifactId>dom4j</artifactId>
+<version>1.6.1</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/dom4j-1.6.1.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>hibernate3</groupId>
+<artifactId>hibernate3</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate3.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>hibernate3</groupId>
+<artifactId>hibernate3</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate3.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>hibernate3</groupId>
+<artifactId>hibernate3</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate3.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>hibernate-annotations</groupId>
+<artifactId>hibernate-annotations</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate-annotations.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>hibernate-commons-annotations</groupId>
+<artifactId>hibernate-commons-annotations</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate-commons-annotations.jar</systemPath>
+</dependency>
+<dependency>
+<groupId>hibernate-entitymanager</groupId>
+<artifactId>hibernate-entitymanager</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate-entitymanager.jar</systemPath>
+</dependency>
+
+
+
+<dependency>
+<groupId>hibernate-tools</groupId>
+<artifactId>hibernate-tools</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate-tools.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>hibernate-validator</groupId>
+<artifactId>hibernate-validator</artifactId>
+<version>5.0.1.Final</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/hibernate-validator-5.0.1.Final.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>jta</groupId>
+<artifactId>jta</artifactId>
+<version>1.0</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/jta.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>cglib</groupId>
+<artifactId>cglib</artifactId>
+<version>2.2.0-b21</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/cglib-2.2.0-b21.jar</systemPath>
+</dependency>
+
+<dependency>
+<groupId>antlr</groupId>
+<artifactId>antlr</artifactId>
+<version>2.7.6</version>
+<scope>system</scope>
+<systemPath>${project.basedir}/lib/antlr-2.7.6.jar</systemPath>
+</dependency>
+
+
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>5.1.6</version>
+</dependency>
+
+  
+ </dependencies>
+  
+</project>
